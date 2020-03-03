@@ -1,8 +1,8 @@
 ## create certs
 ```
-$ mkdir -p secrets/certs
-$ openssl req -nodes -newkey rsa:2048 -keyout secrets/certs/dashboard.key -out secrets/certs/dashboard.csr -subj "/C=/ST=/L=/O=/OU=/CN=kubernetes-dashboard"
-$ openssl x509 -req -sha256 -days 365 -in secrets/certs/dashboard.csr -signkey secrets/certs/dashboard.key -out secrets/certs/dashboard.crt
+$ mkdir -p secret/certs
+$ openssl req -nodes -newkey rsa:2048 -keyout secret/certs/dashboard.key -out secret/certs/dashboard.csr -subj "/C=/ST=/L=/O=/OU=/CN=kubernetes-dashboard"
+$ openssl x509 -req -sha256 -days 365 -in secret/certs/dashboard.csr -signkey secret/certs/dashboard.key -out secret/certs/dashboard.crt
 ```
 
 ## deploy
