@@ -8,6 +8,7 @@ $ openssl x509 -req -sha256 -days 365 -in secret/certs/dashboard.csr -signkey se
 ## deploy
 ```
 $ kubectl apply -k .
+$ kubectl apply -f components.yaml
 ```
 
 ## get service-account token
